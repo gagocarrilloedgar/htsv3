@@ -1,9 +1,18 @@
 const express = require("express");
+const router = require("./router/router");
+require("./database/mongo");
 
+// Create the Express application
 const app = express();
+app.set("trust proxy", 1); // trust first proxy
 
-const PORT = process.env.PORT || 3001;
+// Import and addition of all the different API routes
+app.use("/", router);
 
-app.listen(PORT, () => {
-  console.log(`Server running on ${PORT}`);
+const port = process.env.PORT || 3001;
+
+const server = app.listen(port, () => {
+  console.log("Server running on", port);
 });
+
+module.exports = { app, server };
