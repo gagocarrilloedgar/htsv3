@@ -1,5 +1,10 @@
 # HTSV3
 
+![GitHub forks](https://img.shields.io/github/forks/gagocarrilloedgar/htsv3)
+![GitHub language count](https://img.shields.io/github/languages/count/gagocarrilloedgar/htsv3)
+![CodeFactor Grade](https://img.shields.io/codefactor/grade/github/gagocarrilloedgar/htsv3)
+
+
 Soluciones y proyecto colaborativo open source de búsqueda de perfiles a través de github, etc (nuevas features to come)
 
 ### ¿Cómo empezar?
@@ -67,7 +72,6 @@ Una vez hecho submit, podéis hacer pull request y pedir que alguien os haga cod
 
 
 # TO-DO
-- Poner emblemas al repositorio ( descargas, forks, code coverage, etc)
 - Proponer maqueta en figma del frontend
 - Proponer arquitectura hexagonal del backend
 - Proponer arquitectura hexagonal del frontend
