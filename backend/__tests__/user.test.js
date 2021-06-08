@@ -1,8 +1,7 @@
-const { expect } = require("@jest/globals");
 const { server, app } = require("../server");
 const { clearDatabase, connect, closeDatabase } = require("../database/mongo");
-const request = require("supertest");
-const api = request(app);
+const supertest = require("supertest");
+const api = supertest(app);
 
 /**
  * Connect to a new in-memory database before running any tests.
@@ -18,28 +17,18 @@ afterEach(async () => await clearDatabase());
  * Remove and close the db and server.
  */
 
-afterAll(async () => {
-  await closeDatabase();
+afterAll((done) => {
+  closeDatabase();
   server.close();
+  done();
 });
 
-describe("POST /user", () => {
-
+describe("GET /user", () => {
   test("Response should return 200", () => {
     api
-      .post("/user")
+      .get("/user/3")
       .set("Accept", "application/json")
       .expect("Content-Type", /json/)
       .expect(200);
   });
-
-  test("response should not be null", async () => {
-    const toAdd = {
-      username: "edgar",
-      password: "12345",
-      email: "edgargc9@gmail.com",
-    };
-    await api.post("/user").send({ username }).def;
-  });
 });
-

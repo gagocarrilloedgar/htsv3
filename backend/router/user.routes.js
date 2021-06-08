@@ -1,12 +1,9 @@
 const controller = require("../controller/user.controller");
-const router = require("express").Router;
-
-router.post("/", controller.add);
+const express = require("express");
+const router = express.Router();
 
 router.get("/:id", controller.find);
 
-router.put("/", controller.update);
-
-router.delete("/", controller.delete);
+router.post("/", controller.add);
 
 module.exports = router;

@@ -1,0 +1,19 @@
+{
+  "name": "pruebas",
+  "version": "1.0.0",
+  "description": "development of simple searching algorithms",
+  "main": "main.js",
+  "scripts": {
+    "test": "NODE_ENV=test jest --testTimeout=10000 --verbose",
+    "test:watch": "npm run test -- --watchAll"
+  },
+  "keywords": [
+    "HackThatStartup",
+    "js"
+  ],
+  "author": "Edgar Gago Carrillo",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^27.0.1"
+  }
+}
