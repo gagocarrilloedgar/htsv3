@@ -67,6 +67,7 @@ Una vez hecho submit, podéis hacer pull request y pedir que alguien os haga cod
 
 
 # TO-DO
+- Poner emblemas al repositorio ( descargas, forks, code coverage, etc)
 - Proponer maqueta en figma del frontend
 - Proponer arquitectura hexagonal del backend
 - Proponer arquitectura hexagonal del frontend
