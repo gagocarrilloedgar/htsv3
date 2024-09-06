@@ -22,11 +22,11 @@
   "author": "Edgar Gago carrillo",
   "license": "ISC",
   "dependencies": {
-    "bcrypt": "^5.0.1",
+    "bcrypt": "^5.1.0",
     "bcryptjs": "^2.4.3",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
-    "mongodb-memory-server": "^6.9.6",
+    "mongodb-memory-server": "^8.14.0",
     "mongoose": "^5.12.11",
     "passport": "^0.4.1",
     "passport-github2": "^0.1.12"
